@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
 }));
-function Dashboard() {
+function Dashboard(props) {
   const classes = useStyles();
 
   return (
@@ -43,7 +43,7 @@ function Dashboard() {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" className={classes.title}>
-                Photos
+                React Machine Test
               </Typography>
               <div>
                 <IconButton
@@ -51,6 +51,7 @@ function Dashboard() {
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
                   color="inherit"
+                  onClick={() => props.history.push("/")}
                 >
                   <AccountCircle />
                 </IconButton>

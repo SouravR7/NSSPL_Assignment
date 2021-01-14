@@ -1,8 +1,9 @@
 import * as actionTypes from "./actionTypes";
 
-export function addingEmpolyee() {
+export function addEmployee(addpayload) {
   return {
     type: actionTypes.ADD_EMPLOYEE,
+    addpayload,
   };
 }
 
@@ -27,8 +28,9 @@ export function deleteEmployee(deletepayload) {
   };
 }
 
-export function editEmployee() {
+export function editEmployee(editpayload) {
   return {
     type: actionTypes.EDIT_EMPLOYEE,
+    editpayload,
   };
 }

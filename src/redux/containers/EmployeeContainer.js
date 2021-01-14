@@ -16,6 +16,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     deleteEmployee: (deletepayload) => {
       dispatch(actions.deleteEmployee(deletepayload));
     },
+    addEmployee: (addpayload) => {
+      dispatch(actions.addEmployee(addpayload));
+    },
+    editEmployee: (editpayload) => {
+      dispatch(actions.editEmployee(editpayload));
+    },
   };
 };
 
